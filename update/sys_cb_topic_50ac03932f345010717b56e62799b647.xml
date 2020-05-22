@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <category display_value="ITSM Self Service">3efd22da0b203300a1b16c2367673a10</category>
+        <connect_queue/>
+        <description>ITSM conversation to show user's assigned assets</description>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{
+  "graph_api_version": "1.0.16",
+  "goals": {
+    "dde0c29d78b14f9b9c9ddcb8450bf2b5": {
+      "id": "dde0c29d78b14f9b9c9ddcb8450bf2b5",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "62ad08a17c6a47d8bd624767b765302a": {
+          "id": "62ad08a17c6a47d8bd624767b765302a",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "e7a1410263df4c869f3bfc5ec868c64a": {
+          "id": "e7a1410263df4c869f3bfc5ec868c64a",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "40e383efbf954427b30d67f8c2186d43",
+          "edgeType": "Edge",
+          "source": "62ad08a17c6a47d8bd624767b765302a",
+          "target": "e7a1410263df4c869f3bfc5ec868c64a",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "3134058f5d3441cbb16a9cb936c43381": {
+      "id": "3134058f5d3441cbb16a9cb936c43381",
+      "name": "LiveAgent_application",
+      "value": {
+        "mode": "simple",
+        "value": ""
+      },
+      "varType": "script",
+      "category": "vaVars"
+    }
+  }
+}</graph>
+        <key_phrases>my Assigned Equipment2,assigned asset, asset, hardware,hardware status,assigned, equipment, assigned equipment</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <name>my Assigned Equipment2</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <roles/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-21 07:11:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>50ac03932f345010717b56e62799b647</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>my Assigned Equipment2</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_cb_topic_50ac03932f345010717b56e62799b647</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-21 07:17:20</sys_updated_on>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=50ac03932f345010717b56e62799b647"/>
+</record_update>

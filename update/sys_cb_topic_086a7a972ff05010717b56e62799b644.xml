@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <category display_value="Setup Topics">5628e7f27373230025d032e954f6a7de</category>
+        <connect_queue/>
+        <description>Presents an ending message to the user when the conversation is done.</description>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{
+  "goals": {
+    "1b1eb5b794794871813d519db3ca1ba6": {
+      "id": "1b1eb5b794794871813d519db3ca1ba6",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "cbee4058b7e6405a81d1225ccb46a517": {
+          "id": "cbee4058b7e6405a81d1225ccb46a517",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "9061332780b74ddf9411c2fe99b48f75": {
+          "id": "9061332780b74ddf9411c2fe99b48f75",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "9e99196fcfd4496fa3a344cb3e501cf0": {
+          "id": "9e99196fcfd4496fa3a344cb3e501cf0",
+          "stepType": "TextOutput",
+          "name": "Closing Message",
+          "value": {
+            "value": "(function execute() {\n    return vaSystem.getClosingMessage();\n})()\n",
+            "mode": "script"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "371f4b309b09492eb7a83a2aef093978": {
+          "id": "371f4b309b09492eb7a83a2aef093978",
+          "name": "Close Conversation",
+          "script": "(function execute() {\n    vaSystem.endConversation();\n})()\n",
+          "stepType": "ScriptAction",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "f40bf5abb6b842589691a9389b940708",
+          "edgeType": "Edge",
+          "source": "cbee4058b7e6405a81d1225ccb46a517",
+          "target": "9e99196fcfd4496fa3a344cb3e501cf0",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "5cf1c6da1e4d421bb63a57d3a825fc2c",
+          "edgeType": "Edge",
+          "source": "9e99196fcfd4496fa3a344cb3e501cf0",
+          "target": "371f4b309b09492eb7a83a2aef093978",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "d8b4d84afefb48ac8cb51d740c8330c5",
+          "edgeType": "Edge",
+          "source": "371f4b309b09492eb7a83a2aef093978",
+          "target": "9061332780b74ddf9411c2fe99b48f75",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "graph_api_version": "1.0.16",
+  "variables": {
+    "3a3bf6078b2943fda74a9bbd260cf29d": {
+      "category": "vaInputs",
+      "id": "3a3bf6078b2943fda74a9bbd260cf29d",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    }
+  }
+}</graph>
+        <key_phrases>Closing Conversation</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <name>Close conversation</name>
+        <nlu_intent>End Conversations</nlu_intent>
+        <nlu_intent_label/>
+        <nlu_model>Setup_Topics_Model</nlu_model>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <roles>public</roles>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-21 05:51:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>086a7a972ff05010717b56e62799b644</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Close conversation</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_cb_topic_086a7a972ff05010717b56e62799b644</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-21 05:51:15</sys_updated_on>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=086a7a972ff05010717b56e62799b644"/>
+</record_update>

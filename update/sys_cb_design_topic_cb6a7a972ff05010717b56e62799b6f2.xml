@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="Close conversation">ba6aba572ff05010717b56e62799b631</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"3a28ce700cf3464692d329a9a8423947","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"3a28ce700cf3464692d329a9a8423947"}],"goals":[{"name":"primary","trigger_id":"3a28ce700cf3464692d329a9a8423947","nodes":[{"type":"StartGoal","goal_id":"1b1eb5b794794871813d519db3ca1ba6","greeting_msg":{"type":"String","mode":"string","value":""},"id":"cbee4058b7e6405a81d1225ccb46a517","name":"Start"},{"type":"TerminateGoal","goal_id":"1b1eb5b794794871813d519db3ca1ba6","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"9061332780b74ddf9411c2fe99b48f75","name":"End"},{"type":"OutputPrompt","value":{"type":"String","mode":"script","value":"(function execute() {\n    return vaSystem.getClosingMessage();\n})()\n"},"id":"9e99196fcfd4496fa3a344cb3e501cf0","name":"Closing Message","goal_id":"1b1eb5b794794871813d519db3ca1ba6","applicability":{"type":"Applicability","mode":"script","value":"true"}},{"type":"ScriptedAction","script":"(function execute() {\n    vaSystem.endConversation();\n})()\n","id":"371f4b309b09492eb7a83a2aef093978","name":"Close Conversation","goal_id":"1b1eb5b794794871813d519db3ca1ba6","applicability":{"type":"Applicability","mode":"script","value":"true"}}],"edges":[{"type":"Edge","source_node_id":"cbee4058b7e6405a81d1225ccb46a517","target_node_id":"9e99196fcfd4496fa3a344cb3e501cf0","id":"f40bf5abb6b842589691a9389b940708"},{"type":"Edge","source_node_id":"9e99196fcfd4496fa3a344cb3e501cf0","target_node_id":"371f4b309b09492eb7a83a2aef093978","id":"5cf1c6da1e4d421bb63a57d3a825fc2c"},{"type":"Edge","source_node_id":"371f4b309b09492eb7a83a2aef093978","target_node_id":"9061332780b74ddf9411c2fe99b48f75","id":"d8b4d84afefb48ac8cb51d740c8330c5"}],"id":"1b1eb5b794794871813d519db3ca1ba6"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"sys_user","id":"3a3bf6078b2943fda74a9bbd260cf29d","name":"user"}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":["public"],"scope":"6ead8e780f603200cd674f8ce1050ed1","domain":"global","id":"086a7a972ff05010717b56e62799b644","name":"Close conversation","key_phrases":["Closing Conversation"],"nlu_provider":"","nlu_model":"Setup_Topics_Model","nlu_model_label":"","nlu_intent":"End Conversations","nlu_intent_label":"","flexible_conversation_switching":false,"design_category":"5628e7f27373230025d032e954f6a7de","library":false}</design_definition>
+        <design_topic_id>086a7a972ff05010717b56e62799b644</design_topic_id>
+        <name>Close conversation</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-21 05:51:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>cb6a7a972ff05010717b56e62799b6f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_cb_design_topic_cb6a7a972ff05010717b56e62799b6f2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-21 05:51:26</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="my Assigned Equipment2">796d8fd32f345010717b56e62799b665</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"d00d27ac68ac4b798944b4411c026f71","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"d00d27ac68ac4b798944b4411c026f71"}],"goals":[{"name":"primary","trigger_id":"d00d27ac68ac4b798944b4411c026f71","nodes":[{"type":"StartGoal","goal_id":"dde0c29d78b14f9b9c9ddcb8450bf2b5","greeting_msg":{"type":"String","mode":"string","value":""},"id":"62ad08a17c6a47d8bd624767b765302a","name":"Start"},{"type":"TerminateGoal","goal_id":"dde0c29d78b14f9b9c9ddcb8450bf2b5","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"e7a1410263df4c869f3bfc5ec868c64a","name":"End"}],"edges":[{"type":"Edge","source_node_id":"62ad08a17c6a47d8bd624767b765302a","target_node_id":"e7a1410263df4c869f3bfc5ec868c64a","id":"40e383efbf954427b30d67f8c2186d43"}],"id":"dde0c29d78b14f9b9c9ddcb8450bf2b5"}],"script_variables":[{"type":"String","name":"LiveAgent_application","value":{"type":"String","mode":"string"},"id":"3134058f5d3441cbb16a9cb936c43381"}],"glide_variables":[{"type":"Reference","table":"sys_user","id":"current-user","name":"user"}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"6ead8e780f603200cd674f8ce1050ed1","domain":"global","id":"50ac03932f345010717b56e62799b647","name":"my Assigned Equipment2","key_phrases":["my Assigned Equipment2","assigned asset, asset, hardware,hardware status,assigned, equipment, assigned equipment"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"design_category":"3efd22da0b203300a1b16c2367673a10","library":false}</design_definition>
+        <design_topic_id>50ac03932f345010717b56e62799b647</design_topic_id>
+        <name>my Assigned Equipment2</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-21 07:14:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>356dc3172f345010717b56e62799b6f3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>my Assigned Equipment2</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_cb_design_topic_356dc3172f345010717b56e62799b6f3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-21 07:18:41</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>
